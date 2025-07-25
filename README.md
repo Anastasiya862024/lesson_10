@@ -15,12 +15,7 @@
 
 Инструкция по запуску тестов для формирования отчета Allure
 
-1. Установите необходимые зависимости:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. Запустите тесты с генерацией отчета Allure:
+1. Запустите тесты с генерацией отчета Allure:
    ```bash
    python -m pytest --alluredir allure-result
    ```

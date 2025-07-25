@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from Shop_page import shop_page
+from pages.ShopPage import ShopPage
 import allure
 
 
@@ -25,7 +25,7 @@ def test_shop(browser):
     """
     with allure.step("Открытие страницы интернет магазина"):
         browser.get("https://www.saucedemo.com/")
-        shop = shop_page(browser)
+        shop = ShopPage(browser)
     with allure.step("Авторизация на сайте"):
         shop.authorization()
     with allure.step("Добавление товаров в корзину"):

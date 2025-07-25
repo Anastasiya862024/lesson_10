@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import allure
 
 
-class calc_page:
+class CalcPage:
 
     def __init__(self, driver):
         """

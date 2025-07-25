@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from Calc_page import calc_page
+from pages.CalcPage import CalcPage
 import allure
 
 
@@ -24,7 +24,7 @@ def test_calculator(driver):
     """
     with allure.step("Открытие страницы калькулятора"):
         driver.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
-        calculator = calc_page(driver)
+        calculator = CalcPage(driver)
     with allure.step("Установка задержки 45 секунд"):
         calculator.enter_delay()
     with allure.step("Нажатие кнопок: '7' '+' '8' '='"):

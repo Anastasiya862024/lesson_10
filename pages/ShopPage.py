@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 import allure
 
 
-class shop_page:
+class ShopPage:
 
     def __init__(self, browser):
         """
